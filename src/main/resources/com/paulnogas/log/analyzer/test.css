@@ -8,9 +8,18 @@ don't forget to add stylesheet to fxml file
     -fx-background-color: #222222;
 }
 
-.menu-bar .label,
-.menu .label,
-.menu-item .label {
+.context-menu {
+    -fx-padding: 1 1 1 1
+}
+
+.separator .line {
+    -fx-border-width: 0.5;
+    -fx-border-insets:  0;
+}
+
+.menu-bar > .label,
+.menu > .label,
+.menu-item > .label {
     -fx-text-fill: white;
 }
 
@@ -20,9 +29,9 @@ don't forget to add stylesheet to fxml file
     -fx-background-color: #111111;
 }
 
-.menu:hover .label,
-.menu:showing .label,
-.menu-item:hover .label {
+.menu:hover > .label,
+.menu:showing > .label,
+.menu-item:hover > .label {
     -fx-text-fill: #80CBC4;
 }
 
